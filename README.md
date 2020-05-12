@@ -27,15 +27,15 @@ lua53.exe my-script.lua
 
 To be able to debug your *my-script.lua* lua script, you need to:
 - create a directory called *lua*
-- add the lua binaries for the lua interpreter
-lua53.dll
-lua53.exe
-- add a subdirectory *modules* with the files needed for the *luasocket* module, compiled in the same model as the lua interpreter:
-mime\
-socket\
-ltn12.lua
-mime.lua
-socket.lua
+- add the lua binaries for the lua interpreter  
+lua53.dll  
+lua53.exe  
+- add a subdirectory *modules* with the files needed for the *luasocket* module, compiled in the same model as the lua interpreter:  
+mime\  
+socket\  
+ltn12.lua  
+mime.lua  
+socket.lua  
 - for convenience, I add the lua scripts in the same directory than the lua binaries
 my-script.lua
 - copy the *mobdebug.lua* script under the same directory than the lua script to debug
@@ -65,17 +65,17 @@ The **SciTE** editor ([Scintilla and SciTE](https://www.scintilla.org/SciTE.html
 Those scripts can be complex, specially when it comes to lua coded lexers. This is when the need for a debugger comes clearly under the spot lights !
 SciTE is compiled as a **x64** binary
 
-I have my personal organization of the *SciTE* files, so the lua scripts are under à *lua* sub-directory:
+I have my personal organization of the *SciTE* files, so the lua scripts are under à *lua* sub-directory:  
 wscite\lua
 
 - copy the *mobdebug.lua* script under the same directory than the lua script to debug
-- copy the files of the *luasocket* module, compiled in **x64**, under the sub-directory:
-wscite\lua\modules
-mime\
-socket\
-ltn12.lua
-mime.lua
-socket.lua
+- copy the files of the *luasocket* module, compiled in **x64**, under the sub-directory:  
+wscite\lua\modules  
+mime\  
+socket\  
+ltn12.lua  
+mime.lua  
+socket.lua  
 
 In the lua script to debug *my-script.lua*, you need to add the following lines at the beginning of the script
 ```lua
@@ -106,18 +106,18 @@ The **TextAdept** editor ([Textadept](https://foicica.com/textadept/)) is a very
 Those scripts can be complex, specially when it comes to lua coded lexers. This is when the need for a debugger comes clearly under the spot lights !
 SciTE is compiled as a **Win32** binary
 
-TextAdept has its own strict organization of the files: all the non-core files are under:
+TextAdept has its own strict organization of the files: all the non-core files are under:  
 **%USERPROFILE%\.textadept**
 
-- copy the *mobdebug.lua* script under the directory
+- copy the *mobdebug.lua* script under the directory  
 %USERPROFILE%\.textadept\modules
-- copy the files of the *luasocket* module, compiled in **Win32**, under the sub-directory:
-%USERPROFILE%\.textadept\modules
-mime\
-socket\
-ltn12.lua
-mime.lua
-socket.lua
+- copy the files of the *luasocket* module, compiled in **Win32**, under the sub-directory:  
+%USERPROFILE%\.textadept\modules  
+mime\  
+socket\  
+ltn12.lua  
+mime.lua  
+socket.lua  
 
 In the lua script to debug *my-script.lua*, you need to add the following lines at the beginning of the script
 ```lua
